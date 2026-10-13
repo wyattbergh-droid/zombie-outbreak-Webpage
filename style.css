@@ -1,0 +1,144 @@
+/*
+ Zombie outbreaks styles as variable for reusing colors later
+*/
+
+:root {
+    --bg-color: #121513;
+    --container-bg: #1b201d;
+    --text-primary: #d4d4d2;
+    --text-secondary: #8c968e;
+    --accent-red: #b81d1d;
+    --accent-red-hover: #ff2a2a;
+    --accent-green: #3d8c40;
+    --warning-yellow: #d9b310;
+    --border-color: #2f3832;
+    --font-heading: 'Courier New', Courier, monospace;
+    --font-body: 'Arial', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+}
+
+/* Header & Banner */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 3px dashed var(--accent-red);
+    margin-bottom: 30px;
+    background: rgba(184, 29, 29, 0.05);
+}
+
+header h1 {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    color: var(--accent-red);
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+header p {
+    color: var(--warning-yellow);
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+/* Main Layout Grid */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+/* Sections & Cards */
+section, aside {
+    background-color: var(--container-bg);
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--accent-red);
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: var(--font-heading);
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+}
+
+p {
+    margin-bottom: 15px;
+    color: var(--text-secondary);
+}
+
+/* Alert Boxes / Status */
+#survival-rules {
+    background-color: rgba(217, 179, 16, 0.1);
+    border: 1px solid var(--warning-yellow);
+    color: var(--warning-yellow);
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-family: var(--font-heading);
+}
+
+/* Buttons / Action Links */
+.btn {
+    display: inline-block;
+    background-color: var(--accent-red);
+    color: #fff;
+    font-family: var(--font-heading);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+    background-color: var(--accent-red-hover);
+    transform: scale(1.02);
+}
+
+/* Lists */
+ol {
+    list-style-type: square;
+    margin-left: 20px;
+    color: var(--warning-yellow);
+}
+
+li {
+    margin-bottom: 8px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border-color);
+    font-family: var(--font-heading);
+}

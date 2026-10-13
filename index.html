@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Outbreak Ozarks</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -44,6 +45,16 @@
 
             </div>
         </section>
+        <aside>
+            <h3>Do you think this is a practical survival kit?</h3>
+            <form>
+                <input type="radio" id="yes" name="y_or_n" value="Yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="y_or_n" value="No">
+                <label for="no">No</label>
+                <button class="btn" type="button" onclick="alert('Your answer has been submitted')">Submit</button>
+            </form>
+        </aside>
 
 
     </main>
